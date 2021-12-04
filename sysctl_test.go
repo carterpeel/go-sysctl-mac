@@ -26,7 +26,7 @@ func TestNonPersistent(t *testing.T) {
 	})
 
 	// Set() sets a config option that will not persist upon reboot.
-	if err := Set("kern.maxproc", "4096"); err != nil {
+	if err := Set("kern.maxproc", "1000"); err != nil {
 		t.Fatalf("error incrementing maxproc: %v\n", err)
 	}
 }
